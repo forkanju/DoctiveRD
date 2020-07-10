@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pal.doctiverd.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/workout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:background="@drawable/whole_screen_gradient"></LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/doctive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:fontFamily="@font/quicksandbold"
+        android:gravity="center_horizontal"
+        android:text="@string/second_doctive_txt"
+        android:textColor="@color/txt_color_white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/page_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctive"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/quicksandbold"
+        android:gravity="center_horizontal"
+        android:text="08 of 08"
+        android:textColor="@color/txt_color_white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/gender_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page_count"
+        android:layout_marginTop="@dimen/_135sdp"
+        android:fontFamily="@font/quicksandbold"
+        android:gravity="center_horizontal"
+        android:text="Get fitness advice and notification by e-mail?"
+        android:textColor="@color/txt_color_white"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:id="@+id/gender_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender_query"
+        android:layout_marginLeft="@dimen/_65sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_45sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="@color/txt_color_white"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_85sdp"
+            android:fontFamily="@font/quicksandbold"
+            android:background="@drawable/round_btn_bg"
+            android:textAllCaps="false"
+            android:text="Yes" />
+
+        <Button
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_85sdp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/quicksandbold"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/round_btn_bg"
+            android:textColor="@color/txt_color_white"
+            android:text="No" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
