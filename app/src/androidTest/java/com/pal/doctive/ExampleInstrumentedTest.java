@@ -1,4 +1,4 @@
-package com.pal.doctiverd;
+package com.pal.doctive;
 
 import android.content.Context;
 

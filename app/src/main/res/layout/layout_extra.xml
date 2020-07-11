@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pal.doctiverd.MainActivity">
+    tools:context="com.pal.doctive.activities.MainActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -72,6 +72,7 @@
             android:layout_height="@dimen/_85sdp"
             android:fontFamily="@font/quicksandbold"
             android:background="@drawable/round_btn_bg"
+            android:textSize="22sp"
             android:textAllCaps="false"
             android:text="Yes" />
 
@@ -83,6 +84,7 @@
             android:layout_marginLeft="@dimen/_20sdp"
             android:background="@drawable/round_btn_bg"
             android:textColor="@color/txt_color_white"
+            android:textSize="22sp"
             android:text="No" />
 
 
