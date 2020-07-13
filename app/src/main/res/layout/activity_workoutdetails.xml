@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgapps"
+    tools:context=".activities.WorkoutdetailsActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:id="@+id/txt_dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandbold"
+                android:text="Doctive."
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_dashboard"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/quicksandbold"
+                android:text="Instractions"
+                android:textColor="#F1EAE8"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/gym" />
+
+        </RelativeLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="1"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="5">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/quicksandbold"
+                                android:text="Jumping Jacks"
+                                android:textColor="#6f6f6f"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="6dp"
+                                android:text="category: Lower Body/ Cardio"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp" />
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="250dp"
+                                android:layout_height="300dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/workout_anim2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/quicksandbold"
+                                android:text="Hints"
+                                android:textColor="#6f6f6f"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/quicksandbold"
+                                android:text="@string/content_txt"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="18dp"
+                                android:fontFamily="@font/quicksandbold"
+                                android:text="Breathing"
+                                android:textColor="#6f6f6f"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/quicksandbold"
+                                android:text="Breath is going down, breathe out going up."
+                                android:textColor="#6f6f6f"
+                                android:layout_marginBottom="45dp"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+
+
+            </ScrollView>
+
+
+
+
+</LinearLayout>

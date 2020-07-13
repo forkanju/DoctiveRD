@@ -9,10 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.pal.doctive.activities.SurveyActivity"></activity>
-        <activity android:name="com.pal.doctive.activities.SecondActivity" />
+        <activity android:name=".activities.SurveyActivity"/>
+        <activity android:name=".activities.SecondActivity" />
+        <activity android:name=".activities.WorkoutrunningActivity"/>
+        <activity android:name=".activities.WorkoutdetailsActivity" />
+        <activity android:name=".activities.WorkoutlistActivity" />
+        <activity android:name=".activities.DayActivity" />
+        <activity android:name=".activities.WeekActivity"/>
         <activity
-            android:name="com.pal.doctive.activities.MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

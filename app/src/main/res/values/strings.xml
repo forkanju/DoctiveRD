@@ -10,4 +10,10 @@
 
     <string name="next">Next</string>
     <string name="skip">skip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_txt">A jumping jack, also called side-straddle hop in the US
+        military, is a physical jumping exercise performed by jumping
+        to a position with the legs spread wide and the hands going overhead, sometimes android:textSize=</string>
+
 </resources>

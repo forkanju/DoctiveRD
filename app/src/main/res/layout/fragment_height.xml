@@ -7,48 +7,21 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/workout2">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:alpha="0.8"
-            android:background="@drawable/whole_screen_gradient"></LinearLayout>
+            android:alpha="0.8" />
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/doctive"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_35sdp"
-        android:fontFamily="@font/quicksandbold"
-        android:gravity="center_horizontal"
-        android:text="@string/second_doctive_txt"
-        android:textColor="@color/txt_color_white"
-        android:textSize="40sp"
-        android:textStyle="bold" />
-
-    <TextView
-
-        android:id="@+id/page_count"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/doctive"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:fontFamily="@font/quicksandbold"
-        android:gravity="center_horizontal"
-        android:text="04 of 08"
-        android:textColor="@color/txt_color_white"
-        android:textSize="18sp"
-        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/gender_query"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/page_count"
-        android:layout_marginTop="@dimen/_135sdp"
+        android:layout_marginTop="@dimen/_195sdp"
         android:fontFamily="@font/quicksandbold"
         android:gravity="center_horizontal"
         android:text="How tall you are?"
@@ -79,11 +52,12 @@
             android:textSize="18sp" />
 
         <EditText
+            android:id="@+id/input_height"
             android:layout_width="@dimen/_90sdp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="@dimen/_15sdp"
-            android:text="5 ft 9 in"
+            android:text="180"
             android:textColor="@color/txt_color_white"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -104,10 +78,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginLeft="@dimen/_110sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/age_layout"
+        android:layout_marginLeft="@dimen/_110sdp"
         android:layout_marginTop="@dimen/_25sdp"
         android:orientation="horizontal">
 
@@ -129,5 +103,17 @@
             android:textSize="25sp"
             android:textStyle="bold" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/height_nxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="Next"
+        android:textColor="@color/txt_color_white"
+        android:textSize="22sp" />
+
 
 </RelativeLayout>

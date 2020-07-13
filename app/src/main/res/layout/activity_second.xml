@@ -8,13 +8,15 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/workout2">
+        android:background="@drawable/workout1">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:alpha="0.7"
-            android:background="@drawable/whole_screen_gradient"></LinearLayout>
+            android:background="@drawable/whole_screen_gradient">
+
+        </LinearLayout>
     </FrameLayout>
 
     <TextView
