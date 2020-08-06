@@ -1,5 +1,4 @@
 package com.pal.doctive.activities;
-
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -19,7 +18,7 @@ public class WorkoutlistActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workoutlist);
-      //  getSupportActionBar().hide();
+        //  getSupportActionBar().hide();
         // For Hide Status/Notification Bar background color;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,

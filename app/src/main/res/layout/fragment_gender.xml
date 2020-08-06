@@ -12,10 +12,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:alpha="0.8"
-            />
+            android:alpha="0.8" />
     </FrameLayout>
-
 
 
     <TextView
@@ -37,27 +35,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/gender_query"
-        android:layout_marginLeft="@dimen/_65sdp"
+        android:layout_centerInParent="true"
         android:layout_marginTop="@dimen/_50sdp"
-        android:layout_marginRight="@dimen/_45sdp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
 
         <Button
+            android:padding="@dimen/_3sdp"
             android:id="@+id/btn_male"
             android:layout_width="@dimen/_85sdp"
             android:layout_height="@dimen/_85sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_15sdp"
             android:background="@drawable/round_btn_bg"
             android:fontFamily="@font/quicksandbold"
             android:text="Male"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:textAllCaps="false"
             android:textColor="@color/txt_color_white"
             android:textSize="22sp" />
 
         <Button
+            android:padding="@dimen/_3sdp"
             android:id="@+id/btn_female"
             android:layout_width="@dimen/_85sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:layout_height="@dimen/_85sdp"
-            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
             android:background="@drawable/round_btn_bg"
             android:fontFamily="@font/quicksandbold"
             android:text="Female"
@@ -65,8 +69,16 @@
             android:textColor="@color/txt_color_white"
             android:textSize="22sp" />
 
-
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/back_from_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/ic_back" />
 
 
 </RelativeLayout>

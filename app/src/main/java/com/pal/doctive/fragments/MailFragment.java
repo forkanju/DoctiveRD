@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.pal.doctive.R;
 import com.pal.doctive.activities.SurveyActivity;
@@ -21,6 +22,7 @@ public class MailFragment extends Fragment {
     private View view;
     private FragmentActivity mContext;
     private Button noMail, yesMail;
+    private ImageView back;
 
 
     @Override
@@ -31,6 +33,7 @@ public class MailFragment extends Fragment {
 
         noMail = (Button) view.findViewById(R.id.mail_no);
         yesMail = (Button) view.findViewById(R.id.mail_yes);
+        back =(ImageView) view.findViewById(R.id.back_from_mail);
 
         noMail.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +48,13 @@ public class MailFragment extends Fragment {
             public void onClick(View view) {
                 Answers.getInstance().put_answer("mailnotify", "yes");
                 ((SurveyActivity) mContext).event_survey_completed(Answers.getInstance());
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Answers.getInstance().put_answer("mailnotify", "");
+                ((SurveyActivity) mContext).go_to_back();
             }
         });
         return view;

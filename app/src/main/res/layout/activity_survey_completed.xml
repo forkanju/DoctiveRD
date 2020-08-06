@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.SurveyCompletedActivity">
+    tools:context="com.pal.doctive.activities.MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/workout1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.7"
+            android:background="@drawable/whole_screen_gradient">
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/doctive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/quicksandbold"
+        android:gravity="center_horizontal"
+        android:text="@string/second_doctive_txt"
+        android:textColor="@color/txt_color_white"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/page_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctive"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/quicksanditalic"
+        android:text="physical fitness app."
+        android:textColor="#EDE9E9"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_done"
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="@dimen/_190sdp"
+        android:layout_below="@+id/doctive"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_60sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/lottieff" />
+
+
+    <TextView
+        android:id="@+id/all_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lottie_done"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/quicksandbold"
+        android:gravity="center_horizontal"
+        android:text="All set!"
+        android:textColor="@color/txt_color_white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

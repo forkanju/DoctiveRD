@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.pal.doctive.R;
 import com.pal.doctive.activities.SurveyActivity;
@@ -21,6 +22,7 @@ public class DiabetesFragment extends Fragment {
     private View view;
     private FragmentActivity mContext;
     private Button noDiabetes, yesDiabetes;
+    private ImageView back;
 
 
     @Override
@@ -31,12 +33,13 @@ public class DiabetesFragment extends Fragment {
 
         noDiabetes = (Button) view.findViewById(R.id.diabetes_no);
         yesDiabetes = (Button) view.findViewById(R.id.diabetes_yes);
+        back = (ImageView) view.findViewById(R.id.back_from_diabetes);
         //no diabetes button clicked
         noDiabetes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Answers.getInstance().put_answer("diabetes", "no");
-                ((SurveyActivity)mContext).go_to_next();
+                ((SurveyActivity) mContext).go_to_next();
             }
         });
         //yes diabetes button clicked
@@ -44,7 +47,15 @@ public class DiabetesFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Answers.getInstance().put_answer("diabetes", "yes");
-                ((SurveyActivity)mContext).go_to_next();
+                ((SurveyActivity) mContext).go_to_next();
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Answers.getInstance().put_answer("diabetes", "");
+                ((SurveyActivity) mContext).go_to_back();
             }
         });
         return view;

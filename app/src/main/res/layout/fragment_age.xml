@@ -16,7 +16,6 @@
     </FrameLayout>
 
 
-
     <TextView
         android:id="@+id/gender_query"
         android:layout_width="match_parent"
@@ -35,16 +34,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/gender_query"
-        android:layout_marginLeft="@dimen/_55sdp"
+        android:layout_centerInParent="true"
         android:layout_marginTop="@dimen/_30sdp"
-        android:layout_marginRight="@dimen/_55sdp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="@dimen/_3sdp">
 
         <ImageButton
             android:id="@+id/age_minus"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_2sdp"
             android:background="@drawable/round_btn_bg"
             android:fontFamily="@font/quicksandbold"
             android:src="@drawable/ic_remove"
@@ -57,6 +57,9 @@
             android:layout_width="@dimen/_90sdp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:minLines="1"
             android:padding="@dimen/_15sdp"
             android:text="25"
             android:textColor="@color/txt_color_white"
@@ -69,6 +72,7 @@
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_2sdp"
             android:background="@drawable/round_btn_bg"
             android:fontFamily="@font/quicksandbold"
             android:src="@drawable/ic_add"
@@ -93,14 +97,23 @@
 
     <TextView
         android:id="@+id/age_nxt"
-        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
         android:text="Next"
         android:textColor="@color/txt_color_white"
-        android:textSize="22sp"
-        android:layout_alignParentRight="true"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/back_from_age"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/ic_back" />
 
 
 </RelativeLayout>

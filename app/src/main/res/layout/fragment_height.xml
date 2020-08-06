@@ -34,16 +34,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/gender_query"
-        android:layout_marginLeft="@dimen/_55sdp"
+        android:layout_centerInParent="true"
         android:layout_marginTop="@dimen/_30sdp"
-        android:layout_marginRight="@dimen/_55sdp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="@dimen/_3sdp">
 
         <ImageButton
-            android:id="@+id/age_minus"
+            android:id="@+id/height_minus"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_2sdp"
             android:background="@drawable/round_btn_bg"
             android:fontFamily="@font/quicksandbold"
             android:src="@drawable/ic_remove"
@@ -51,23 +52,37 @@
             android:textColor="@color/txt_color_white"
             android:textSize="18sp" />
 
-        <EditText
-            android:id="@+id/input_height"
+        <com.google.android.material.textfield.TextInputLayout
+            android:theme="@style/Theme.AppCompat"
+            android:id="@+id/height_textInputLayout"
             android:layout_width="@dimen/_90sdp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="@dimen/_15sdp"
-            android:text="180"
-            android:textColor="@color/txt_color_white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_height"
+                android:layout_width="@dimen/_88sdp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="@dimen/_15sdp"
+                android:text="180"
+                android:textColor="@color/txt_color_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
 
 
         <ImageButton
-            android:id="@+id/age_plus"
+            android:id="@+id/height_plus"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_2sdp"
             android:background="@drawable/round_btn_bg"
             android:fontFamily="@font/quicksandbold"
             android:src="@drawable/ic_add"
@@ -114,6 +129,15 @@
         android:text="Next"
         android:textColor="@color/txt_color_white"
         android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/back_from_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/ic_back" />
 
 
 </RelativeLayout>

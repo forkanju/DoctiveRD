@@ -1,4 +1,4 @@
-package com.pal.profileviewpager;
+package com.pal.doctive.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,6 +14,7 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.pal.doctive.R;
 
 import java.util.ArrayList;
 

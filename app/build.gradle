@@ -47,6 +47,11 @@ dependencies {
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     //droidsonroids library for gifImageView
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    //lottie animation view
+    implementation 'com.airbnb.android:lottie:3.4.1'
+    //MPAndroidChart
+    implementation 'com.github.PhilJay:MPAndroidChart:2.2.4'
+
 
 
 }

@@ -7,14 +7,12 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-      >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:alpha="0.8"
-           />
+            android:alpha="0.8" />
     </FrameLayout>
 
 
@@ -34,21 +32,24 @@
 
     <LinearLayout
         android:id="@+id/gender_layout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/gender_query"
-        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_centerInParent="true"
         android:layout_marginTop="@dimen/_30sdp"
-        android:layout_marginRight="@dimen/_25sdp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
 
         <Button
             android:id="@+id/lose_fat"
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/_250sdp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_2sdp"
             android:background="@drawable/login_button_bk"
             android:fontFamily="@font/quicksandbold"
+            android:padding="@dimen/_3sdp"
             android:text="Lose fat"
             android:textAllCaps="false"
             android:textColor="@color/txt_color_white"
@@ -59,9 +60,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_2sdp"
             android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_2sdp"
             android:background="@drawable/login_button_bk"
             android:fontFamily="@font/quicksandbold"
+            android:padding="@dimen/_3sdp"
             android:text="Get fitter"
             android:textAllCaps="false"
             android:textColor="@color/txt_color_white"
@@ -72,9 +76,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_2sdp"
             android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_2sdp"
             android:background="@drawable/login_button_bk"
             android:fontFamily="@font/quicksandbold"
+            android:padding="@dimen/_3sdp"
             android:text="Gain muscle"
             android:textAllCaps="false"
             android:textColor="@color/txt_color_white"
@@ -82,6 +89,15 @@
 
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/back_from_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/ic_back" />
 
 
 </RelativeLayout>

@@ -9,7 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/workout1">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -20,7 +19,6 @@
             android:id="@+id/pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-
 
     </FrameLayout>
 
@@ -50,22 +48,34 @@
             android:id="@+id/page_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="01"
-            android:textColor="@color/txt_color_white"
+            android:text="physical fitness app."
+            android:fontFamily="@font/quicksanditalic"
+            android:textColor="#EDE9E9"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/quicksandbold"
-            android:text=" of 08"
-            android:textColor="@color/txt_color_white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/quicksandbold"-->
+<!--            android:text=" of 08"-->
+<!--            android:textColor="@color/txt_color_white"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold" />-->
 
     </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/dots"-->
+<!--        android:visibility="visible"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginLeft="@dimen/_150sdp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--    </LinearLayout>-->
 
 
 </RelativeLayout>

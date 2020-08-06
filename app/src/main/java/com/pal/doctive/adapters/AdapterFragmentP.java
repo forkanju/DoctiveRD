@@ -1,4 +1,4 @@
-package com.pal.profileviewpager;
+package com.pal.doctive.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

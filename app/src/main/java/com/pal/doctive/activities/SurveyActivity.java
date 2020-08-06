@@ -1,14 +1,12 @@
 package com.pal.doctive.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import com.pal.doctive.R;
 import com.pal.doctive.adapters.AdapterFragmentQ;
@@ -28,7 +26,7 @@ public class SurveyActivity extends AppCompatActivity {
 
     private ArrayList<Fragment> mListFragments;
     private ViewPager mViewPager;
-
+    private final static int NUM_PAGES = 8;
 
 
     @Override
@@ -36,12 +34,12 @@ public class SurveyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey);
 
+
 //           // For Hide Status/Notification Bar background color;
 //        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLIPOP) {
 //            getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
 //                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 //        }
-
 
 
         mListFragments = new ArrayList<>();
@@ -75,6 +73,7 @@ public class SurveyActivity extends AppCompatActivity {
         AdapterFragmentQ mViewPagerAdapter = new AdapterFragmentQ(getSupportFragmentManager(), 1, mListFragments);
         mViewPager.setAdapter(mViewPagerAdapter);
 
+        // addDots();
 
 
     }
@@ -92,10 +91,59 @@ public class SurveyActivity extends AppCompatActivity {
 
         Log.e("TAG", "FINISH " + instance.get_json_object());
         //Toast.makeText(getApplicationContext(), "Survey completed!", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(SurveyActivity.this, WeekActivity.class);
+        Intent intent = new Intent(SurveyActivity.this, ProfileActivity.class);
         startActivity(intent);
-       // finish();
+        // finish();
     }
 
+    public void go_back_to_start_activity() {
+        Intent intent = new Intent(SurveyActivity.this, SecondActivity.class);
+        startActivity(intent);
+
+    }
+
+//    public void addDots(){
+//        dots = new ArrayList<>();
+//        LinearLayout dotsLayout = (LinearLayout) findViewById(R.id.dots);
+//
+//        for(int i = 0; i <NUM_PAGES; i++){
+//            ImageView dot = new ImageView(this);
+//            dot.setImageDrawable(getResources().getDrawable(R.drawable.pager_dot_not_selected));
+//
+//            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+//                    LinearLayout.LayoutParams.WRAP_CONTENT,
+//                    LinearLayout.LayoutParams.WRAP_CONTENT);
+//            dotsLayout.addView(dot, params);
+//            dots.add(dot);
+//        }
+//
+//       mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+//           @Override
+//           public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+//
+//           }
+//
+//           @Override
+//           public void onPageSelected(int position) {
+//               selectDot(position);
+//
+//           }
+//
+//           @Override
+//           public void onPageScrollStateChanged(int state) {
+//
+//           }
+//       });
+//
+//    }
+
+//    public void selectDot(int index){
+//        Resources res = getResources();
+//        for(int i = 0; i< NUM_PAGES; i++){
+//            int drawbleID = (i==index)?(R.drawable.pager_dot_selected): (R.drawable.pager_dot_not_selected);
+//            Drawable drawable = res.getDrawable(drawbleID);
+//            dots.get(i).setImageDrawable(drawable);
+//        }
+//    }
 
 }

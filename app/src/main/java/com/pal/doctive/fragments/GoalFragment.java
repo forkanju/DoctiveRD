@@ -1,6 +1,7 @@
 package com.pal.doctive.fragments;
 
 import android.os.Bundle;
+
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -17,8 +18,9 @@ import com.pal.doctive.models.Answers;
 public class GoalFragment extends Fragment {
 
     private FragmentActivity mContext;
-    private View view;
+    private View view, back;
     private Button loseFat, getFitter, gainMuscle;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,6 +31,7 @@ public class GoalFragment extends Fragment {
         loseFat = (Button) view.findViewById(R.id.lose_fat);
         getFitter = (Button) view.findViewById(R.id.get_fitter);
         gainMuscle = (Button) view.findViewById(R.id.lose_fat);
+        back = view.findViewById(R.id.back_from_goal);
 
         //lose fitness button clicked
         loseFat.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +58,14 @@ public class GoalFragment extends Fragment {
             public void onClick(View view) {
                 Answers.getInstance().put_answer("goal", "gain muscle");
                 ((SurveyActivity) mContext).go_to_next();
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Answers.getInstance().put_answer("goal", "");
+                ((SurveyActivity) mContext).go_to_back();
             }
         });
 

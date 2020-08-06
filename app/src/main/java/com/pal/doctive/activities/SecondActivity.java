@@ -33,6 +33,8 @@ public class SecondActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(SecondActivity.this, SurveyActivity.class);
+                    //Temporary Launch
+                    //Intent intent = new Intent(SecondActivity.this, ProfileActivity.class);
                     startActivity(intent);
 
                 }

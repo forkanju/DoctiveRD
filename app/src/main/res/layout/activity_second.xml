@@ -69,9 +69,10 @@
         android:layout_marginLeft="@dimen/_35sdp"
         android:layout_marginTop="@dimen/_130sdp"
         android:layout_marginRight="@dimen/_35sdp"
-        android:background="@drawable/btn_bg"
+        android:background="@drawable/login_button_bk"
         android:fontFamily="@font/quicksandbold"
         android:text="@string/second_start_btn_txt"
+        android:layout_marginBottom="@dimen/_2sdp"
         android:textColor="@color/txt_color_white"
         android:textSize="18sp" />
 

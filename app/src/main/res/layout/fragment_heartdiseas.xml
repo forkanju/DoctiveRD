@@ -31,16 +31,18 @@
         android:textStyle="bold" />
 
     <LinearLayout
+        android:padding="@dimen/_3sdp"
         android:id="@+id/gender_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/gender_query"
-        android:layout_marginLeft="@dimen/_65sdp"
         android:layout_marginTop="@dimen/_50sdp"
-        android:layout_marginRight="@dimen/_45sdp"
+        android:layout_centerInParent="true"
         android:orientation="horizontal">
 
         <Button
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
             android:id="@+id/yes_heartdiseas"
             android:layout_width="@dimen/_85sdp"
             android:layout_height="@dimen/_85sdp"
@@ -52,6 +54,8 @@
             android:textSize="22sp" />
 
         <Button
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_2sdp"
             android:id="@+id/on_heartdiseas"
             android:layout_width="@dimen/_85sdp"
             android:layout_height="@dimen/_85sdp"
@@ -65,6 +69,15 @@
 
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/back_from_heart_disease"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 
 </RelativeLayout>
