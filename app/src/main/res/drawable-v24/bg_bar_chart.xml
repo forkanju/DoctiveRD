@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="?android:colorControlHighlight"
+    tools:targetApi="lollipop">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#A601579B"
+                android:endColor="#A61DE9B6"
+                android:angle="90"/>
+            <corners
+                android:radius="20dp"
+                />
+        </shape>
+    </item>
+</ripple>
